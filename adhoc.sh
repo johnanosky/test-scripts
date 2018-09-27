@@ -6,6 +6,7 @@
 # The first interface from iw dev is used.
 # A sample conf file for each can be found in this repo.
 
+
 # Check to see if the host machine has an IP associated with the interface
 LOCAL_ADDR=`ip addr | grep 192 | awk -F '.' '{print $4}' | awk -F '/' '{print $1}'`
 W_DEV=`iw dev | grep -i interface | awk -F ' ' '{print $2}'`
